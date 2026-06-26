@@ -1,0 +1,97 @@
+:root {
+	--blue: #0085c7;
+	--black: #1b1d1f;
+	--red: #df0024;
+	--yellow: #f4c300;
+	--green: #00a650;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	min-height: 100vh;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url('../assets/images/bg.jpg');
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.container {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 80px 15px 40px;
+	text-align: center;
+}
+
+.title {
+	padding-top: 300px;
+	font-size: 80px;
+	color: #ded7d7;
+	margin-bottom: 90px;
+	text-align: center;
+}
+
+.olympic__rings {
+	position: relative;
+	width: 580px;
+
+	left: 52%;
+	transform: translateX(-48%);
+}
+
+.ring {
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+}
+
+.olympic__rings-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100px;
+	height: auto;
+	transform: translate(-50%, -50%);
+	display: block;
+}
+
+.ring--blue {
+	left: 0;
+	top: 0;
+	border: 10px solid var(--blue);
+	z-index: 1;
+}
+
+.ring--black {
+	left: 150px;
+	top: 0;
+	border: 10px solid var(--black);
+	z-index: 2;
+}
+
+.ring--red {
+	left: 300px;
+	top: 0;
+	border: 10px solid var(--red);
+	z-index: 1;
+}
+
+.ring--yellow {
+	left: 75px;
+	top: 115px;
+	border: 10px solid var(--yellow);
+	z-index: 1;
+}
+
+.ring--green {
+	left: 225px;
+	top: 115px;
+	border: 10px solid var(--green);
+	z-index: 2;
+}
