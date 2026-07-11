@@ -3,133 +3,99 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>My Business Card</title>
+		<title>Happy Pets</title>
+		<link rel="stylesheet" href="./src/css/stayle.css" />
 	</head>
 	<body>
-		<h1>Maykel Shalumov</h1>
+		<div class="container">
+			<header class="header" id="home">
+				<p class="eyebrow">Your guide to happy companions</p>
+				<h1>Happy Pets</h1>
+				<p class="intro">
+					Simple tips, warm stories, and everything your pet needs.
+				</p>
+				<nav>
+					<a href="#home">Home</a>
+					<a href="#pets">Pets</a>
+					<a href="#care">Care</a>
+					<a href="#contacts">Contacts</a>
+				</nav>
+			</header>
 
-		<hr />
+			<main>
+				<section class="about">
+					<div>
+						<p class="section-label">About us</p>
+						<h2>Life is better with pets</h2>
+						<p>
+							Pets bring joy, comfort, and friendship into our homes. We help
+							you care for them with confidence.
+						</p>
+					</div>
+					<button class="btn-primary" type="button">Learn more</button>
+				</section>
 
-		<img
-			src="src/assets/images/IMG_9583.png"
-			alt="Portrait of Maykel Shalumov"
-			width="400"
-		/>
+				<section id="pets">
+					<p class="section-label">Meet the favorites</p>
+					<h2>Popular pets</h2>
+					<div class="pet-grid">
+						<article>
+							<img src="./src/assets/cat.jpg" alt="Gray tabby cat in a park" />
+							<div class="card-content">
+								<h3>Cats</h3>
+								<p>Calm, curious, and affectionate companions.</p>
+							</div>
+						</article>
+						<article>
+							<img
+								src="./src/assets/dog.jpg"
+								alt="Golden retriever in a park"
+							/>
+							<div class="card-content">
+								<h3>Dogs</h3>
+								<p>Loyal friends who fill every day with energy.</p>
+							</div>
+						</article>
+						<article>
+							<img src="./src/assets/parrot.jpg" />
+							<div class="card-content">
+								<h3>Parrots</h3>
+								<p>Colorful, intelligent, and wonderfully social birds.</p>
+							</div>
+						</article>
+					</div>
+				</section>
 
-		<hr />
+				<section id="care" class="care">
+					<div>
+						<p class="section-label">Daily routine</p>
+						<h2>Pet care tips</h2>
+					</div>
+					<ul>
+						<li><span>01</span>Choose healthy, high-quality food.</li>
+						<li><span>02</span>Visit the veterinarian regularly.</li>
+						<li><span>03</span>Give your pet attention every day.</li>
+					</ul>
+				</section>
 
-		<h3>About me</h3>
+				<section class="actions">
+					<h2>Selector demo</h2>
+					<p>Tick the checkbox to reveal the delete button.</p>
+					<div class="item">
+						<input
+							type="checkbox"
+							class="checkbox-trigger"
+							id="delete-toggle"
+						/>
+						<label for="delete-toggle">Enable item controls</label>
+						<button class="btn-delete" type="button">Delete item</button>
+					</div>
+				</section>
+			</main>
 
-		<p>
-			Hello! My name is Maykel. I am 28 years old. I am passionate about
-			programming and photography, and I enjoy taking photos and traveling.
-			<br />
-			I am currently studying at Tel-Ran in the FullStack-66 group. <br />
-			My goal is to become a professional FullStack Developer. <br />
-			During this course, I will learn:
-		</p>
-
-		<ol>
-			<li>HTML</li>
-			<li>CSS</li>
-			<li>JavaScript</li>
-			<li>React</li>
-			<li>TypeScript</li>
-			<li>Node.js</li>
-			<li>And other technologies</li>
-		</ol>
-
-		<hr />
-
-		<h3>Soft Skills</h3>
-		<ul>
-			<li>Communication</li>
-			<li>Teamwork</li>
-			<li>Willingness to Learn</li>
-			<li>Time Management</li>
-		</ul>
-
-		<hr />
-
-		<table border="1" width="200">
-			<caption>
-				Hard Skills
-			</caption>
-			<thead>
-				<tr>
-					<th>Name</th>
-					<th>Level</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>HTML</td>
-					<td>Intermediate</td>
-				</tr>
-				<tr>
-					<td>CSS</td>
-					<td>Intermediate</td>
-				</tr>
-				<tr>
-					<td>JavaScript</td>
-					<td>Basic</td>
-				</tr>
-				<tr>
-					<td>React</td>
-					<td>Basic</td>
-				</tr>
-				<tr>
-					<td>Figma</td>
-					<td>Intermediate</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<hr />
-
-		<table border="1" width="200">
-			<caption>
-				Languages
-			</caption>
-			<thead>
-				<tr>
-					<th>Name</th>
-					<th>Level</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Russian</td>
-					<td>Native</td>
-				</tr>
-				<tr>
-					<td>Hebrew</td>
-					<td>Native</td>
-				</tr>
-				<tr>
-					<td>English</td>
-					<td>Intermediate</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<h3>Contacts</h3>
-		<ul>
-			<li>
-				<a href="mailto:shalumov97@gmail.com" target="_blank"> gmail</a>
-			</li>
-			<li>
-				<a href="https://t.me/Maykel9723" target="_blank"> Telegram</a>
-			</li>
-			<li>
-				<a href="https://github.com/97Maykel97" target="_blank">GitHub</a>
-			</li>
-		</ul>
-
-		<hr />
-
-		<footer>
-			<p>© 2026 Maykel Shalumov</p>
-		</footer>
+			<footer id="contacts">
+				<p>&copy; 2026 Happy Pets · Made with care</p>
+			</footer>
+		</div>
 	</body>
 </html>
