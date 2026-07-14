@@ -1,0 +1,195 @@
+:root {
+	--text-color: #1d2340;
+	--gray-color: #70758e;
+	--main-color: #7157e8;
+	--main-dark-color: #5740c7;
+	--border-color: #e3e5ef;
+	--page-color: #f2efff;
+	--field-color: #f9f9fc;
+	--button-light-color: #f0f1f6;
+	--required-color: #ff0000;
+	--white-color: #ffffff;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	padding: 40px 20px;
+	font-family: Arial, sans-serif;
+	color: var(--text-color);
+	background-color: var(--page-color);
+}
+
+.page-shell {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	background-color: var(--white-color);
+	border: 1px solid var(--border-color);
+	border-radius: 20px;
+	box-shadow: 0 10px 30px rgba(69, 52, 124, 0.15);
+}
+
+.registration-form {
+	width: 100%;
+	padding: 40px;
+}
+
+fieldset {
+	border: none;
+}
+
+legend {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.form-note {
+	margin-top: 8px;
+	margin-bottom: 25px;
+	font-size: 13px;
+	color: var(--gray-color);
+}
+
+.form-note span {
+	color: var(--required-color);
+}
+
+.fields-wrap {
+	margin-left: -8px;
+	margin-right: -8px;
+	font-size: 0;
+}
+
+.field {
+	display: inline-block;
+	width: 50%;
+	margin-bottom: 20px;
+	padding-left: 8px;
+	padding-right: 8px;
+	font-size: 16px;
+	vertical-align: top;
+}
+
+.field label,
+.field-label {
+	display: block;
+	margin-top: 0;
+	margin-bottom: 8px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.field input[type='text'],
+.field input[type='email'],
+.field input[type='tel'],
+.field input[type='date'],
+.field select {
+	width: 100%;
+	height: 45px;
+	padding: 0 12px;
+	font-size: 14px;
+	color: var(--text-color);
+	background-color: var(--field-color);
+	border: 1px solid var(--border-color);
+	border-radius: 8px;
+	outline: none;
+}
+
+.field input:focus,
+.field select:focus {
+	background-color: var(--white-color);
+	border-color: var(--main-color);
+}
+
+.choice-group {
+	white-space: nowrap;
+	font-size: 0;
+}
+
+.field .choice-card {
+	display: inline-block;
+	width: 49%;
+	height: 45px;
+	margin-right: 2%;
+	margin-bottom: 0;
+	padding: 12px;
+	font-size: 14px;
+	font-weight: normal;
+	background-color: var(--field-color);
+	border: 1px solid var(--border-color);
+	border-radius: 8px;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+.field .choice-card:last-child {
+	margin-right: 0;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+	width: 17px;
+	height: 17px;
+	margin: 0 6px 0 0;
+	vertical-align: middle;
+	accent-color: var(--main-color);
+}
+
+.field .choice-card:hover {
+	border-color: var(--main-color);
+	background-color: var(--white-color);
+}
+
+.terms {
+	padding: 5px 8px 0;
+	font-size: 13px;
+}
+
+.check-label {
+	cursor: pointer;
+	color: var(--gray-color);
+}
+
+.check-label a {
+	font-weight: bold;
+	color: var(--main-color);
+}
+
+.form-actions {
+	margin-top: 30px;
+	text-align: right;
+}
+
+.button {
+	height: 45px;
+	padding: 0 22px;
+	font-size: 14px;
+	font-weight: bold;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.button--secondary {
+	color: var(--gray-color);
+	background-color: var(--button-light-color);
+}
+
+.button--primary {
+	margin-left: 8px;
+	color: var(--white-color);
+	background-color: var(--main-color);
+}
+
+.button--primary:hover {
+	background-color: var(--main-dark-color);
+}

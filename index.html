@@ -3,133 +3,126 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>My Business Card</title>
+		<title>Registration Form</title>
+		<link rel="stylesheet" href="./src/css/style.css" />
 	</head>
 	<body>
-		<h1>Maykel Shalumov</h1>
+		<main class="page-shell">
+			<form class="registration-form" action="" method="get">
+				<fieldset>
+					<legend>Registration form</legend>
+					<p class="form-note"><span>*</span> Required fields</p>
 
-		<hr />
+					<div class="fields-wrap">
+						<div class="field">
+							<label for="fName">First name:*</label>
+							<input
+								id="fName"
+								name="fName"
+								type="text"
+								placeholder="Enter your first name"
+								pattern="[A-Za-z]{3,15}"
+								title="Enter 3–15 English letters"
+								autocomplete="given-name"
+								required
+							/>
+						</div>
 
-		<img
-			src="src/assets/images/IMG_9583.png"
-			alt="Portrait of Maykel Shalumov"
-			width="400"
-		/>
+						<div class="field">
+							<label for="lName">Last name:*</label>
+							<input
+								id="lName"
+								name="lName"
+								type="text"
+								placeholder="Enter your last name"
+								pattern="[A-Za-z]{3,20}"
+								title="Enter 3–20 English letters"
+								autocomplete="family-name"
+								required
+							/>
+						</div>
 
-		<hr />
+						<div class="field">
+							<label for="email">Email:*</label>
+							<input
+								id="email"
+								name="email"
+								type="email"
+								placeholder="example@gmail.com"
+								pattern="[A-Za-z0-9._%+-]+@gmail\.com"
+								title="Enter a Gmail address, for example: example@gmail.com"
+								autocomplete="email"
+								required
+							/>
+						</div>
 
-		<h3>About me</h3>
+						<div class="field">
+							<label for="phone">Phone:*</label>
+							<input
+								id="phone"
+								name="phone"
+								type="tel"
+								placeholder="+972501234567"
+								pattern="\+9725[0-9]{8}"
+								title="Enter a phone number in the format +972501234567"
+								autocomplete="tel"
+								required
+							/>
+						</div>
 
-		<p>
-			Hello! My name is Maykel. I am 28 years old. I am passionate about
-			programming and photography, and I enjoy taking photos and traveling.
-			<br />
-			I am currently studying at Tel-Ran in the FullStack-66 group. <br />
-			My goal is to become a professional FullStack Developer. <br />
-			During this course, I will learn:
-		</p>
+						<div class="field">
+							<label for="language">Language:*</label>
+							<select id="language" name="language" required>
+								<option value="" selected disabled>Choose a language</option>
+								<option value="en">English</option>
+								<option value="he">Hebrew</option>
+								<option value="ru">Russian</option>
+							</select>
+						</div>
 
-		<ol>
-			<li>HTML</li>
-			<li>CSS</li>
-			<li>JavaScript</li>
-			<li>React</li>
-			<li>TypeScript</li>
-			<li>Node.js</li>
-			<li>And other technologies</li>
-		</ol>
+						<div class="field">
+							<p class="field-label">Gender:*</p>
+							<div class="choice-group">
+								<label class="choice-card"
+									><input
+										type="radio"
+										name="gender"
+										value="male"
+										required
+									/><span>Male</span></label
+								>
+								<label class="choice-card"
+									><input
+										type="radio"
+										name="gender"
+										value="female"
+										required
+									/><span>Female</span></label
+								>
+							</div>
+						</div>
 
-		<hr />
+						<div class="field">
+							<label for="birthDate">Date of birth:*</label>
+							<input id="birthDate" name="birthDate" type="date" required />
+						</div>
 
-		<h3>Soft Skills</h3>
-		<ul>
-			<li>Communication</li>
-			<li>Teamwork</li>
-			<li>Willingness to Learn</li>
-			<li>Time Management</li>
-		</ul>
+						<div class="terms">
+							<label class="check-label">
+								<input type="checkbox" name="terms" value="accepted" required />
+								<span>I agree to the <a href="#">terms and conditions</a></span>
+							</label>
+						</div>
+					</div>
 
-		<hr />
-
-		<table border="1" width="200">
-			<caption>
-				Hard Skills
-			</caption>
-			<thead>
-				<tr>
-					<th>Name</th>
-					<th>Level</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>HTML</td>
-					<td>Intermediate</td>
-				</tr>
-				<tr>
-					<td>CSS</td>
-					<td>Intermediate</td>
-				</tr>
-				<tr>
-					<td>JavaScript</td>
-					<td>Basic</td>
-				</tr>
-				<tr>
-					<td>React</td>
-					<td>Basic</td>
-				</tr>
-				<tr>
-					<td>Figma</td>
-					<td>Intermediate</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<hr />
-
-		<table border="1" width="200">
-			<caption>
-				Languages
-			</caption>
-			<thead>
-				<tr>
-					<th>Name</th>
-					<th>Level</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Russian</td>
-					<td>Native</td>
-				</tr>
-				<tr>
-					<td>Hebrew</td>
-					<td>Native</td>
-				</tr>
-				<tr>
-					<td>English</td>
-					<td>Intermediate</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<h3>Contacts</h3>
-		<ul>
-			<li>
-				<a href="mailto:shalumov97@gmail.com" target="_blank"> gmail</a>
-			</li>
-			<li>
-				<a href="https://t.me/Maykel9723" target="_blank"> Telegram</a>
-			</li>
-			<li>
-				<a href="https://github.com/97Maykel97" target="_blank">GitHub</a>
-			</li>
-		</ul>
-
-		<hr />
-
-		<footer>
-			<p>© 2026 Maykel Shalumov</p>
-		</footer>
+					<div class="form-actions">
+						<button class="button button--secondary" type="reset">Clear</button>
+						<button class="button button--primary" type="submit">
+							Create account <span>→</span>
+						</button>
+					</div>
+				</fieldset>
+			</form>
+		</main>
 	</body>
 </html>
