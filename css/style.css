@@ -1,19 +1,18 @@
+:root {
+	--main-color: #000;
+	--second-color: #fff;
+}
+
 *,
 *::after,
 *::before {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	text-align: center;
 }
 
 .container {
-	max-width: 1200px;
 	padding: 0 30px;
-}
-
-.boxes {
-	margin-top: 50px;
 }
 
 .box {
@@ -25,16 +24,21 @@
 
 .red {
 	background-color: red;
+	color: var(--main-color);
 }
 .orange {
 	background-color: orange;
+	color: var(--main-color);
 }
 .yellow {
 	background-color: yellow;
+	color: var(--main-color);
 }
 .green {
 	background-color: green;
+	color: var(--main-color);
 }
 .skyblue {
 	background-color: skyblue;
+	color: var(--main-color);
 }
