@@ -147,8 +147,8 @@
 	.contacts__form-column {
 		flex-grow: 0;
 		flex-shrink: 0;
-		flex-basis: 41.666667%;
-		width: 41.666667%;
+		flex-basis: 42%;
+		width: 42%;
 	}
 
 	.contacts__decoration-column {
@@ -159,7 +159,7 @@
 	}
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
 	.contacts__info,
 	.contacts__form {
 		width: 100%;
