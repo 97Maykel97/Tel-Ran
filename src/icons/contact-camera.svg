@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520">
+  <g
+    fill="none"
+    stroke="#6B6F76"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <!-- Camera body -->
+    <path
+      d="M112 188L190 154H326L374 108H488L536 158L650 183L705 231V392L651 433L202 449L102 391V236Z"
+      stroke-width="8"
+    />
+    <path d="M102 236L205 274L704 231" stroke-width="5"/>
+    <path d="M205 274L202 449" stroke-width="5"/>
+    <path d="M650 183L650 433" stroke-width="5"/>
+
+    <!-- Top housing and viewfinder -->
+    <path d="M295 158L350 84H478L536 158" stroke-width="8"/>
+    <path d="M365 84L385 52H454L475 84" stroke-width="7"/>
+    <path d="M389 66H451" stroke-width="4"/>
+    <path d="M224 154V116H316L326 154" stroke-width="7"/>
+    <rect x="238" y="124" width="64" height="22" rx="6" stroke-width="4"/>
+
+    <!-- Grip -->
+    <path d="M570 174L655 194L688 239V369L648 411L573 392Z" stroke-width="7"/>
+    <path d="M615 221L667 235" stroke-width="4"/>
+    <path d="M620 248L673 263" stroke-width="4"/>
+    <path d="M621 276L673 290" stroke-width="4"/>
+    <path d="M620 305L671 319" stroke-width="4"/>
+    <path d="M616 335L666 348" stroke-width="4"/>
+
+    <!-- Lens mount -->
+    <ellipse cx="410" cy="316" rx="188" ry="151" stroke-width="9"/>
+    <ellipse cx="410" cy="316" rx="158" ry="128" stroke-width="6"/>
+
+    <!-- Lens barrel -->
+    <path d="M348 205L296 237L273 284L275 353L309 402L366 435" stroke-width="6"/>
+    <path d="M479 194L532 216L564 261L571 329L548 381L501 421" stroke-width="6"/>
+    <ellipse cx="420" cy="317" rx="123" ry="105" stroke-width="8"/>
+    <ellipse cx="430" cy="317" rx="93" ry="80" stroke-width="6"/>
+    <ellipse cx="440" cy="316" rx="61" ry="53" stroke-width="5"/>
+    <ellipse cx="451" cy="310" rx="29" ry="25" stroke-width="4"/>
+    <path d="M374 245L405 223" stroke-width="4"/>
+    <path d="M486 381L514 361" stroke-width="4"/>
+
+    <!-- Lens rings -->
+    <path d="M301 264L330 273" stroke-width="3"/>
+    <path d="M292 289L324 295" stroke-width="3"/>
+    <path d="M291 317L321 318" stroke-width="3"/>
+    <path d="M295 345L325 341" stroke-width="3"/>
+    <path d="M306 372L334 362" stroke-width="3"/>
+    <path d="M519 244L544 258" stroke-width="3"/>
+    <path d="M535 270L559 282" stroke-width="3"/>
+    <path d="M542 300L567 306" stroke-width="3"/>
+    <path d="M541 331L566 330" stroke-width="3"/>
+    <path d="M532 361L555 354" stroke-width="3"/>
+
+    <!-- Controls -->
+    <ellipse cx="586" cy="190" rx="33" ry="14" stroke-width="5"/>
+    <path d="M559 185V166L614 174V192" stroke-width="4"/>
+    <circle cx="180" cy="225" r="16" stroke-width="5"/>
+    <circle cx="219" cy="235" r="9" stroke-width="4"/>
+    <rect x="126" y="278" width="55" height="30" rx="7" stroke-width="4"/>
+    <path d="M137 291H169" stroke-width="3"/>
+
+    <!-- Small sketch details -->
+    <path d="M118 364L181 398" stroke-width="3"/>
+    <path d="M130 347L187 377" stroke-width="3"/>
+    <path d="M665 385L690 365" stroke-width="3"/>
+    <path d="M230 425L286 424" stroke-width="3"/>
+    <path d="M591 416L633 414" stroke-width="3"/>
+    <path d="M346 119H473" stroke-width="3"/>
+  </g>
+</svg>

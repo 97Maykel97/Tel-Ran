@@ -1,135 +1,535 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>My Business Card</title>
-	</head>
-	<body>
-		<h1>Maykel Shalumov</h1>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>My hobby</title>
 
-		<hr />
-
-		<img
-			src="src/assets/images/IMG_9583.png"
-			alt="Portrait of Maykel Shalumov"
-			width="400"
+		<!-- Bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
 		/>
 
-		<hr />
+		<!-- Google Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
 
-		<h3>About me</h3>
+		<!-- My CSS -->
+		<link rel="stylesheet" href="./src/css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__container-nav">
+				<a href="./index.html" class="header__logo">
+					<img
+						src="./src/icons/camera.svg"
+						alt="Camera"
+						class="header__logo-image"
+					/>
+					<span class="header__logo-text">PhotoWorld</span>
+				</a>
 
-		<p>
-			Hello! My name is Maykel. I am 28 years old. I am passionate about
-			programming and photography, and I enjoy taking photos and traveling.
-			<br />
-			I am currently studying at Tel-Ran in the FullStack-66 group. <br />
-			My goal is to become a professional FullStack Developer. <br />
-			During this course, I will learn:
-		</p>
+				<nav class="header__nav" id="header-navigation">
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="#about" class="header__link">About</a>
+						</li>
 
-		<ol>
-			<li>HTML</li>
-			<li>CSS</li>
-			<li>JavaScript</li>
-			<li>React</li>
-			<li>TypeScript</li>
-			<li>Node.js</li>
-			<li>And other technologies</li>
-		</ol>
+						<li class="header__item">
+							<a href="#genres" class="header__link">Genres</a>
+						</li>
 
-		<hr />
+						<li class="header__item">
+							<a href="#gallery" class="header__link">Gallery</a>
+						</li>
 
-		<h3>Soft Skills</h3>
-		<ul>
-			<li>Communication</li>
-			<li>Teamwork</li>
-			<li>Willingness to Learn</li>
-			<li>Time Management</li>
-		</ul>
+						<li class="header__item">
+							<a href="#tips" class="header__link">Tips</a>
+						</li>
 
-		<hr />
+						<li class="header__item">
+							<a href="#contacts" class="header__link">Contacts</a>
+						</li>
+					</ul>
+				</nav>
 
-		<table border="1" width="200">
-			<caption>
-				Hard Skills
-			</caption>
-			<thead>
-				<tr>
-					<th>Name</th>
-					<th>Level</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>HTML</td>
-					<td>Intermediate</td>
-				</tr>
-				<tr>
-					<td>CSS</td>
-					<td>Intermediate</td>
-				</tr>
-				<tr>
-					<td>JavaScript</td>
-					<td>Basic</td>
-				</tr>
-				<tr>
-					<td>React</td>
-					<td>Basic</td>
-				</tr>
-				<tr>
-					<td>Figma</td>
-					<td>Intermediate</td>
-				</tr>
-			</tbody>
-		</table>
+				<div class="header__socials">
+					<a href="#" class="header__social-link">
+						<img
+							src="https://cdn.simpleicons.org/vk"
+							width="16"
+							height="16"
+							alt="VK"
+						/>
+					</a>
+					<a href="#" class="header__social-link">
+						<i class="bi bi-facebook"></i>
+					</a>
+					<a href="#" class="header__social-link">
+						<i class="bi bi-youtube"></i>
+					</a>
+				</div>
 
-		<hr />
+				<button
+					class="header__menu-button"
+					type="button"
+					aria-label="Open navigation menu"
+					aria-controls="header-navigation"
+					aria-expanded="false"
+				>
+					<span class="header__menu-line"></span>
+					<span class="header__menu-line"></span>
+					<span class="header__menu-line"></span>
+				</button>
+			</div>
 
-		<table border="1" width="200">
-			<caption>
-				Languages
-			</caption>
-			<thead>
-				<tr>
-					<th>Name</th>
-					<th>Level</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Russian</td>
-					<td>Native</td>
-				</tr>
-				<tr>
-					<td>Hebrew</td>
-					<td>Native</td>
-				</tr>
-				<tr>
-					<td>English</td>
-					<td>Intermediate</td>
-				</tr>
-			</tbody>
-		</table>
+			<div class="header__hero">
+				<div class="header__hero-content">
+					<p class="header__eyebrow">Welcome to PhotoWorld</p>
+					<h1 class="header__title">Photography is my hobby</h1>
+					<p class="header__description">
+						I capture landscapes, cities and unforgettable moments through my
+						camera lens.
+					</p>
+					<a href="#gallery" class="header__button">Explore gallery</a>
+				</div>
+			</div>
+		</header>
 
-		<h3>Contacts</h3>
-		<ul>
-			<li>
-				<a href="mailto:shalumov97@gmail.com" target="_blank"> gmail</a>
-			</li>
-			<li>
-				<a href="https://t.me/Maykel9723" target="_blank"> Telegram</a>
-			</li>
-			<li>
-				<a href="https://github.com/97Maykel97" target="_blank">GitHub</a>
-			</li>
-		</ul>
+		<section class="about" id="about">
+			<div class="container">
+				<div class="row align-items-center g-5">
+					<div class="col-12 col-md-5">
+						<img
+							src="./src/imgs/travel-photographer.jpg"
+							alt="A photographer taking a photo of a mountain landscape"
+							class="about__img img-fluid"
+						/>
+					</div>
 
-		<hr />
+					<div class="col-12 col-md-7">
+						<div class="about__content">
+							<h2 class="about__title">
+								<span class="title-accent">Abo</span>ut My Hobby
+							</h2>
 
-		<footer>
-			<p>© 2026 Maykel Shalumov</p>
+							<p class="about__text">
+								Photography is my way of seeing the world from a different
+								perspective. I enjoy discovering unique angles, playing with
+								light and shadow, capturing meaningful moments, and sharing them
+								with others.
+							</p>
+
+							<p class="about__text">
+								This hobby inspires me to travel, grow, and appreciate the
+								beauty in everyday life.
+							</p>
+
+							<div class="about__features row g-4">
+								<div class="col-12 col-sm-4 col-md-12 col-xl-4">
+									<div class="about__feature">
+										<div class="about__feature-icon">
+											<img
+												src="./src/icons/mountain.svg"
+												alt="Mountain landscape icon"
+											/>
+										</div>
+
+										<div class="about__feature-content">
+											<h3 class="about__feature-title">Inspiration</h3>
+
+											<p class="about__feature-text">
+												Nature, people, cities and everyday life
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-12 col-sm-4 col-md-12 col-xl-4">
+									<div class="about__feature">
+										<div class="about__feature-icon">
+											<img src="./src/icons/camera.svg" alt="Camera icon" />
+										</div>
+
+										<div class="about__feature-content">
+											<h3 class="about__feature-title">Technique</h3>
+
+											<p class="about__feature-text">
+												I constantly learn and try new things
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-12 col-sm-4 col-md-12 col-xl-4">
+									<div class="about__feature">
+										<div class="about__feature-icon">
+											<img src="./src/icons/heart.svg" alt="Heart icon" />
+										</div>
+
+										<div class="about__feature-content">
+											<h3 class="about__feature-title">Emotions</h3>
+
+											<p class="about__feature-text">
+												Every photograph tells a story
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="genres" id="genres">
+			<div class="container">
+				<!-- Заголовок секции -->
+				<div class="row">
+					<div class="col-12">
+						<h2 class="genres__title">
+							Photography <span class="title-accent">Gen</span>res
+						</h2>
+					</div>
+				</div>
+
+				<!-- Карточки -->
+				<div class="genres__cards row g-4">
+					<!-- Landscape -->
+					<div class="col-12 col-md-4">
+						<article class="genres__card h-100">
+							<img
+								src="./src/imgs/mountain-lake.jpg"
+								alt="Mountain landscape with a lake"
+								class="genres__card-image"
+							/>
+
+							<div class="genres__card-content">
+								<img
+									src="./src/icons/mountain.svg"
+									alt="Mountain landscape icon"
+									class="genres__icon"
+								/>
+
+								<div class="genres__card-info">
+									<h3 class="genres__card-title">Landscape</h3>
+
+									<p class="genres__card-text">
+										I love photographing nature, mountains, forests, and lakes.
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<!-- Portrait -->
+					<div class="col-12 col-md-4">
+						<article class="genres__card h-100">
+							<img
+								src="./src/imgs/woman-portrait.jpg"
+								alt="Portrait of a woman"
+								class="genres__card-image"
+							/>
+
+							<div class="genres__card-content">
+								<img
+									src="./src/icons/portrait.svg"
+									alt="Portrait icon"
+									class="genres__icon"
+								/>
+
+								<div class="genres__card-info">
+									<h3 class="genres__card-title">Portrait</h3>
+
+									<p class="genres__card-text">
+										Capturing emotions and personality in every photograph.
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<!-- City -->
+					<div class="col-12 col-md-4">
+						<article class="genres__card h-100">
+							<img
+								src="./src/imgs/city-tram-at-sunset.jpg"
+								alt="City street with a tram at sunset"
+								class="genres__card-image"
+							/>
+
+							<div class="genres__card-content">
+								<img
+									src="./src/icons/city.svg"
+									alt="City icon"
+									class="genres__icon"
+								/>
+
+								<div class="genres__card-info">
+									<h3 class="genres__card-title">City</h3>
+
+									<p class="genres__card-text">
+										Architecture, streets, transport, and urban atmosphere.
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="gallery" id="gallery">
+			<div class="container" id="">
+				<h2 class="gallery__title">
+					My <span class="title-accent">Gal</span>lery
+				</h2>
+
+				<div class="row g-3">
+					<div class="col-12 col-md-4">
+						<img
+							src="./src/imgs/mountain-lake-sunset.jpg"
+							alt="Mountain lake at sunset"
+							class="gallery__img"
+						/>
+					</div>
+					<div class="col-12 col-md-4">
+						<img
+							src="./src/imgs/ocean-sunset.jpg"
+							alt="Sunset over the ocean"
+							class="gallery__img"
+						/>
+					</div>
+					<div class="col-12 col-md-4">
+						<img
+							src="./src/imgs/city-skyline-at-night.jpg"
+							alt="City skyline at night"
+							class="gallery__img"
+						/>
+					</div>
+					<div class="col-12 col-md-4">
+						<img
+							src="./src/imgs/mountain-fjord-sunset.jpg"
+							alt="Mountain fjord at sunset"
+							class="gallery__img"
+						/>
+					</div>
+					<div class="col-12 col-md-4">
+						<img
+							src="./src/imgs/florence-sunset.jpg"
+							alt="Florence at sunset"
+							class="gallery__img"
+						/>
+					</div>
+					<div class="col-12 col-md-4">
+						<img
+							src="./src/imgs/cinque-terre-sunset.jpg"
+							alt="Cinque Terre coast at sunset"
+							class="gallery__img"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="tips" id="tips">
+			<div class="tips__background">
+				<div class="container">
+					<div class="row align-items-start g-3">
+						<div class="col-12 col-xl-3">
+							<h2 class="tips__title">
+								<span class="title-accent">Tip</span>s for Beginners
+							</h2>
+							<p class="tips__description">
+								A few simple rules that will help you take better photos every
+								day.
+							</p>
+						</div>
+
+						<div class="col-12 col-sm-6 col-lg-3 col-xl">
+							<article class="tips__item">
+								<div class="tips__icon-wrapper">
+									<img
+										src="./src/icons/sun.svg"
+										alt="Sun icon"
+										class="tips__icon"
+									/>
+								</div>
+								<div>
+									<h3 class="tips__item-title">Light</h3>
+									<p class="tips__item-text">
+										Watch the light — it decides everything.
+									</p>
+								</div>
+							</article>
+						</div>
+
+						<div class="col-12 col-sm-6 col-lg-3 col-xl">
+							<article class="tips__item">
+								<div class="tips__icon-wrapper">
+									<img
+										src="./src/icons/composition-grid.svg"
+										alt="Composition grid icon"
+										class="tips__icon"
+									/>
+								</div>
+								<div>
+									<h3 class="tips__item-title">Composition</h3>
+									<p class="tips__item-text">
+										Use the rule of thirds and leading lines.
+									</p>
+								</div>
+							</article>
+						</div>
+
+						<div class="col-12 col-sm-6 col-lg-3 col-xl">
+							<article class="tips__item">
+								<div class="tips__icon-wrapper">
+									<img
+										src="./src/icons/camera.svg"
+										alt="Camera icon"
+										class="tips__icon"
+									/>
+								</div>
+								<div>
+									<h3 class="tips__item-title">Practice</h3>
+									<p class="tips__item-text">
+										Shoot often, experiment and learn.
+									</p>
+								</div>
+							</article>
+						</div>
+
+						<div class="col-12 col-sm-6 col-lg-3 col-xl">
+							<article class="tips__item">
+								<div class="tips__icon-wrapper">
+									<img
+										src="./src/icons/heart.svg"
+										alt="Heart icon"
+										class="tips__icon"
+									/>
+								</div>
+								<div>
+									<h3 class="tips__item-title">Inspiration</h3>
+									<p class="tips__item-text">
+										Explore other photographers and find your style.
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contacts" id="contacts">
+			<div class="container">
+				<div class="row align-items-center g-4">
+					<div class="col-12 contacts__info-column">
+						<div class="contacts__info">
+							<h2 class="contacts__title">Contact Me</h2>
+
+							<ul class="contacts__list">
+								<li class="contacts__item">
+									<i class="bi bi-envelope"></i>
+									<a href="mailto:mail@example.com">mail@example.com</a>
+								</li>
+
+								<li class="contacts__item">
+									<i class="bi bi-geo-alt"></i>
+									<span>Tel Aviv, Israel</span>
+								</li>
+
+								<li class="contacts__item">
+									<i class="bi bi-instagram"></i>
+									<a href="#">@myphoto_world</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Середина -->
+					<div class="col-12 contacts__form-column">
+						<form class="contacts__form">
+							<div class="row g-3">
+								<div class="col-12 col-sm-6">
+									<label class="visually-hidden" for="name">Your name</label>
+									<input
+										class="contacts__input"
+										id="name"
+										name="name"
+										type="text"
+										placeholder="Your name"
+										required
+									/>
+								</div>
+
+								<div class="col-12 col-sm-6">
+									<label class="visually-hidden" for="email">Email</label>
+									<input
+										class="contacts__input"
+										id="email"
+										name="email"
+										type="email"
+										placeholder="Email"
+										required
+									/>
+								</div>
+
+								<div class="col-12">
+									<label class="visually-hidden" for="message"
+										>Your message</label
+									>
+									<textarea
+										class="contacts__textarea"
+										id="message"
+										name="message"
+										placeholder="Your message"
+										required
+									></textarea>
+								</div>
+
+								<div class="col-12">
+									<button class="contacts__button" type="submit">
+										Send message
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<!-- Правая сторона -->
+					<div class="col-12 contacts__decoration-column">
+						<div class="contacts__decoration">
+							<img
+								src="./src/imgs/contact-camera.png"
+								alt="Camera illustration"
+								class="contacts__camera"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<p class="footer__copyright">
+					&copy; 2026 PhotoWorld. All rights reserved.
+				</p>
+			</div>
 		</footer>
+		<script src="./src/js/navigation.js"></script>
 	</body>
 </html>

@@ -1,0 +1,19 @@
+.footer {
+	padding: 18px 0;
+	color: #fff;
+}
+
+.footer__container {
+	max-width: 1700px;
+	padding: 18px 20px;
+	margin: 0 auto;
+	background-color: #222b40;
+	border-radius: 0 0 15px 15px;
+	text-align: center;
+}
+
+.footer__copyright {
+	margin: 0;
+	font-size: 13px;
+	line-height: 1.5;
+}

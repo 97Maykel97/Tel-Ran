@@ -1,0 +1,9 @@
+@import url('./base/variables.css');
+@import url('./base/base.css');
+@import url('./components/header/header.css');
+@import url('./components/about/about.css');
+@import url('./components/genres/genres.css');
+@import url('./components/gallery/gallery.css');
+@import url('./components/tips/tips.css');
+@import url('./components/contacts/contacts.css');
+@import url('./components/footer/footer.css');

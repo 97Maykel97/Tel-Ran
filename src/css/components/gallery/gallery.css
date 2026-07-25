@@ -1,0 +1,21 @@
+.gallery {
+	padding: 50px 0;
+	background-color: #f3f8fa;
+}
+
+.gallery__title {
+	margin: 0 0 40px;
+	color: #101c2b;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.gallery__img {
+	display: block;
+	width: 100%;
+	aspect-ratio: 16 / 7;
+	object-fit: cover;
+	border-radius: 10px;
+}
