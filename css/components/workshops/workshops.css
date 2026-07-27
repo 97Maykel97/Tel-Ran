@@ -1,0 +1,125 @@
+.workshops-section {
+	margin-top: 70px;
+	padding-bottom: 70px;
+}
+
+.workshops-section h2 {
+	text-align: center;
+	font-weight: 900;
+}
+
+.workshops-list {
+	margin-top: 50px;
+}
+
+.workshop-item {
+	display: flex;
+	min-width: 0;
+}
+
+.workshop-card {
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	width: 100%;
+	border-radius: 8px;
+	overflow: hidden;
+	background-color: #fff;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.workshop-card > img {
+	display: block;
+	width: 100%;
+	height: 180px;
+	border-radius: 8px;
+	object-fit: cover;
+}
+
+.workshop-time {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	margin: auto 0 0;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.clock-icon {
+	width: 16px;
+	height: 16px;
+	flex-shrink: 0;
+	object-fit: contain;
+}
+
+.workshop-card-content {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	min-width: 0;
+	padding: 20px;
+}
+
+.workshop-card-content h3 {
+	font-size: 17px;
+	font-weight: 900;
+}
+
+.workshop-card-content p {
+	width: 100%;
+	font-size: 14px;
+	overflow-wrap: anywhere;
+}
+
+@media (width < 576px) {
+	.workshops-section {
+		margin-top: 40px;
+	}
+
+	.workshops-list {
+		margin-top: 10px;
+	}
+
+	.workshop-card {
+		flex-direction: row;
+	}
+
+	.workshop-card > img {
+		width: 40%;
+		height: auto;
+	}
+
+	.workshop-card-content {
+		width: 60%;
+	}
+
+	.workshop-card-content p {
+		width: auto;
+	}
+}
+
+@media (576px <= width < 768px) {
+	.workshops-section {
+		margin-top: 40px;
+	}
+
+	.workshops-list {
+		margin-top: 10px;
+	}
+
+	.workshop-item:last-child .workshop-card {
+		flex-direction: row;
+	}
+
+	.workshop-item:last-child .workshop-card > img {
+		width: 40%;
+		height: auto;
+	}
+
+	.workshop-item:last-child .workshop-card-content {
+		width: 60%;
+	}
+
+	.workshop-item:last-child .workshop-card-content p {
+		width: auto;
+	}
+}

@@ -4,6 +4,15 @@
 		<meta charset="UTF-8" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+
 		<!-- Bootstrap -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -17,146 +26,192 @@
 
 	<body>
 		<header class="site-header">
-			<div class="header-content">
-				<a class="logo" href="#"> HobbyFest </a>
+			<div class="container">
+				<nav
+					class="header-content navbar navbar-expand-sm"
+					data-bs-theme="dark"
+					aria-label="Main navigation"
+				>
+					<a class="logo navbar-brand" href="#">HobbyFest</a>
 
-				<nav class="main-navigation" aria-label="Main navigation">
-					<ul class="navigation-list">
-						<li>
-							<a href="#workshops">Workshops</a>
-						</li>
+					<button
+						class="navbar-toggler border-0"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#main-navigation"
+						aria-controls="main-navigation"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="menu-icon" aria-hidden="true"></span>
+					</button>
 
-						<li>
-							<a href="#schedule">Schedule</a>
-						</li>
+					<div class="collapse navbar-collapse" id="main-navigation">
+						<ul class="navigation-list navbar-nav ms-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="#workshops">Workshops</a>
+							</li>
 
-						<li>
-							<a href="#about">About</a>
-						</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#schedule">Schedule</a>
+							</li>
 
-						<li>
-							<a href="#contacts">Contacts</a>
-						</li>
-					</ul>
+							<li class="nav-item">
+								<a class="nav-link" href="#about">About</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="#contacts">Contacts</a>
+							</li>
+						</ul>
+					</div>
 				</nav>
 			</div>
 		</header>
 
 		<main>
 			<section class="hero">
-				<img
-					class="hero-image"
-					src="images/hero.png"
-					alt="Mountain lake at sunset"
-				/>
+				<div class="container">
+					<div class="hero-content">
+						<h1>Find your new hobby</h1>
 
-				<div class="hero-content">
-					<h1>Find your new hobby</h1>
+						<p>Try five creative activities in one day</p>
 
-					<p>Try five creative activities in one day</p>
-
-					<a href="#workshops"> Choose a workshop </a>
+						<a href="#workshops"> Choose a workshop </a>
+					</div>
 				</div>
 			</section>
 
 			<section class="workshops-section" id="workshops">
-				<div class="workshops-content">
-					<h2>Our workshops</h2>
+				<div class="container">
+					<div class="workshops-content">
+						<h2>Our workshops</h2>
 
-					<div class="workshops-list">
-						<div class="workshop-item">
-							<article class="workshop-card">
-								<img
-									src="images/photography.png"
-									alt="Photographer holding a camera"
-								/>
+						<div class="workshops-list row g-4">
+							<div class="workshop-item col-12 col-sm-6 col-md-4 col-xl">
+								<article class="workshop-card">
+									<img
+										src="images/photography.png"
+										alt="Photographer holding a camera"
+									/>
 
-								<div class="workshop-card-content">
-									<h3>Photography</h3>
+									<div class="workshop-card-content">
+										<h3>Photography</h3>
 
-									<p>Learn to see ordinary places differently.</p>
+										<p>Learn to see ordinary places differently.</p>
 
-									<p>
-										<time datetime="11:00">11:00</time>
-									</p>
-								</div>
-							</article>
-						</div>
+										<p class="workshop-time">
+											<img
+												class="clock-icon"
+												src="images/clock.svg"
+												alt="Clock"
+												aria-hidden="true"
+											/>
+											<time datetime="11:00">11:00</time>
+										</p>
+									</div>
+								</article>
+							</div>
 
-						<div class="workshop-item">
-							<article class="workshop-card">
-								<img
-									src="images/cooking.png"
-									alt="Prepared chicken, potatoes and vegetables"
-								/>
+							<div class="workshop-item col-12 col-sm-6 col-md-4 col-xl">
+								<article class="workshop-card">
+									<img
+										src="images/cooking.png"
+										alt="Prepared chicken, potatoes and vegetables"
+									/>
 
-								<div class="workshop-card-content">
-									<h3>Cooking</h3>
+									<div class="workshop-card-content">
+										<h3>Cooking</h3>
 
-									<p>Prepare a simple dish with a professional chef.</p>
+										<p>Prepare a simple dish with a professional chef.</p>
 
-									<p>
-										<time datetime="12:00">12:00</time>
-									</p>
-								</div>
-							</article>
-						</div>
+										<p class="workshop-time">
+											<img
+												class="clock-icon"
+												src="images/clock.svg"
+												alt="Clock"
+												aria-hidden="true"
+											/>
+											<time datetime="12:00">12:00</time>
+										</p>
+									</div>
+								</article>
+							</div>
 
-						<div class="workshop-item">
-							<article class="workshop-card">
-								<img
-									src="images/gaming.png"
-									alt="Two people playing a computer game"
-								/>
+							<div class="workshop-item col-12 col-sm-6 col-md-4 col-xl">
+								<article class="workshop-card">
+									<img
+										src="images/gaming.png"
+										alt="Two people playing a computer game"
+									/>
 
-								<div class="workshop-card-content">
-									<h3>Gaming</h3>
+									<div class="workshop-card-content">
+										<h3>Gaming</h3>
 
-									<p>Create a concept for your first computer game.</p>
+										<p>Create a concept for your first computer game.</p>
 
-									<p>
-										<time datetime="13:00">13:00</time>
-									</p>
-								</div>
-							</article>
-						</div>
+										<p class="workshop-time">
+											<img
+												class="clock-icon"
+												src="images/clock.svg"
+												alt="Clock"
+												aria-hidden="true"
+											/>
+											<time datetime="13:00">13:00</time>
+										</p>
+									</div>
+								</article>
+							</div>
 
-						<div class="workshop-item">
-							<article class="workshop-card">
-								<img
-									src="images/painting.png"
-									alt="Paintbrush on a colorful canvas"
-								/>
+							<div class="workshop-item col-12 col-sm-6 col-md-6 col-xl">
+								<article class="workshop-card">
+									<img
+										src="images/painting.png"
+										alt="Paintbrush on a colorful canvas"
+									/>
 
-								<div class="workshop-card-content">
-									<h3>Painting</h3>
+									<div class="workshop-card-content">
+										<h3>Painting</h3>
 
-									<p>Paint a small picture and take it home.</p>
+										<p>Paint a small picture and take it home.</p>
 
-									<p>
-										<time datetime="14:00">14:00</time>
-									</p>
-								</div>
-							</article>
-						</div>
+										<p class="workshop-time">
+											<img
+												class="clock-icon"
+												src="images/clock.svg"
+												alt="Clock"
+												aria-hidden="true"
+											/>
+											<time datetime="14:00">14:00</time>
+										</p>
+									</div>
+								</article>
+							</div>
 
-						<div class="workshop-item">
-							<article class="workshop-card">
-								<img
-									src="images/woodwork.png"
-									alt="Craftsperson working with a hand plane"
-								/>
+							<div class="workshop-item col-12 col-sm-12 col-md-6 col-xl">
+								<article class="workshop-card">
+									<img
+										src="images/woodwork.png"
+										alt="Craftsperson working with a hand plane"
+									/>
 
-								<div class="workshop-card-content">
-									<h3>Woodwork</h3>
+									<div class="workshop-card-content">
+										<h3>Woodwork</h3>
 
-									<p>Create a simple wooden object with your own hands.</p>
+										<p>Create a simple wooden object with your own hands.</p>
 
-									<p>
-										<time datetime="15:00">15:00</time>
-									</p>
-								</div>
-							</article>
+										<p class="workshop-time">
+											<img
+												class="clock-icon"
+												src="images/clock.svg"
+												alt="Clock"
+												aria-hidden="true"
+											/>
+											<time datetime="15:00">15:00</time>
+										</p>
+									</div>
+								</article>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -164,19 +219,43 @@
 		</main>
 
 		<footer class="site-footer" id="contacts">
-			<div class="footer-content">
-				<p>&copy; 2026 HobbyFest</p>
+			<div class="container">
+				<div class="footer-content">
+					<p>&copy; 2026 HobbyFest</p>
 
-				<div class="social-links">
-					<span>Follow us</span>
+					<div class="social-links">
+						<span>Follow us</span>
 
-					<a href="#" aria-label="Facebook"> Facebook </a>
+						<div class="social-icons">
+							<a href="#" aria-label="Facebook">
+								<img
+									src="images/facebook.svg"
+									alt=""
+									aria-hidden="true"
+								/>
+							</a>
 
-					<a href="#" aria-label="Instagram"> Instagram </a>
+							<a href="#" aria-label="Instagram">
+								<img
+									src="images/instagram.svg"
+									alt=""
+									aria-hidden="true"
+								/>
+							</a>
 
-					<a href="#" aria-label="Twitter"> Twitter </a>
+							<a href="#" aria-label="Twitter">
+								<img
+									src="images/twitter.svg"
+									alt=""
+									aria-hidden="true"
+								/>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>
