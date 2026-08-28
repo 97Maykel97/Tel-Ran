@@ -1,0 +1,14 @@
+{
+  "name": "hm-21-22-objects",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "products": "node dist/products.js",
+    "accounts": "node dist/accounts.js",
+    "start": "npm run products && npm run accounts"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.2"
+  }
+}

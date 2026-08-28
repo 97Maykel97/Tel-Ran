@@ -1,0 +1,12 @@
+{
+  "name": "hm-22-accounts",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/accounts.js"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.2"
+  }
+}

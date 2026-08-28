@@ -1,0 +1,12 @@
+{
+  "name": "hm-20-comparator",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/comparator.js"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.2"
+  }
+}
