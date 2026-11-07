@@ -1,0 +1,53 @@
+.student-list__heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.student-list h2,
+.student-list__heading p {
+  margin: 0;
+}
+
+.student-list h2 {
+  color: #0f172a;
+  font-size: 1.5rem;
+}
+
+.student-list__heading > div p {
+  margin-top: 0.35rem;
+  color: #64748b;
+}
+
+.student-count {
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.empty-message {
+  margin: 0;
+  padding: 1rem;
+  border: 1px dashed #94a3b8;
+  border-radius: 0.75rem;
+  color: #475569;
+  text-align: center;
+}
+
+@media (max-width: 520px) {
+  .student-list__heading {
+    align-items: start;
+    flex-direction: column;
+  }
+}

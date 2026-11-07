@@ -1,0 +1,29 @@
+.status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0 0;
+  font-weight: 700;
+}
+
+.status__dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+}
+
+.status--active {
+  color: #047857;
+}
+
+.status--active .status__dot {
+  background: #10b981;
+}
+
+.status--paused {
+  color: #be123c;
+}
+
+.status--paused .status__dot {
+  background: #f43f5e;
+}

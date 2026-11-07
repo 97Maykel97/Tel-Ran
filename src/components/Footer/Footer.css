@@ -1,0 +1,12 @@
+.footer {
+  max-width: 68rem;
+  margin: 2rem auto 0;
+  padding: 1.5rem 1.25rem;
+  border-top: 1px solid #d7dfec;
+  color: #64748b;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}

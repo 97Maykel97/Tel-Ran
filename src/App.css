@@ -1,0 +1,40 @@
+.app-shell {
+  min-height: 100vh;
+  padding: 3.5rem 1.25rem 1rem;
+}
+
+.app-header,
+.app-content {
+  max-width: 68rem;
+  margin: 0 auto;
+}
+
+.app-header {
+  margin-bottom: 2.5rem;
+}
+
+.app-kicker {
+  margin: 0 0 0.5rem;
+  color: #2563eb;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.app-header h1,
+.app-header p {
+  margin: 0;
+}
+
+.app-header h1 {
+  color: #0f172a;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+}
+
+.app-header h1 + p {
+  margin-top: 0.75rem;
+  color: #64748b;
+  font-size: 1.125rem;
+}
