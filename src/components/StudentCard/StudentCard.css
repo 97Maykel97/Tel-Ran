@@ -13,15 +13,21 @@
 
 .student-card__topline {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .student-card__id,
-.student-card__age {
+.student-card__age,
+.student-card__group {
   margin: 0;
   color: #64748b;
+}
+
+.student-card__id {
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .student-card h3 {
@@ -31,10 +37,11 @@
 }
 
 .student-card__minor-label {
-  padding: 0.25rem 0.5rem;
+  padding: 0.2rem 0.45rem;
   border-radius: 999px;
   background: #dbeafe;
   color: #1d4ed8;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 700;
+  line-height: 1.25;
 }
