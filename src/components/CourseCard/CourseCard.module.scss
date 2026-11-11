@@ -19,6 +19,11 @@
 	background: #7d91ff;
 }
 
+.courseCard:focus-visible {
+	outline: 0.2rem solid #ffffff;
+	outline-offset: -0.45rem;
+}
+
 .accent2::before {
 	background: #a88cff;
 }

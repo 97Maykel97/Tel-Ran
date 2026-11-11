@@ -1,6 +1,23 @@
+import { useEffect } from 'react';
 import styles from './CourseModal.module.scss';
 
 function CourseModal({ course, onClose }) {
+	useEffect(() => {
+		if (!course) {
+			return undefined;
+		}
+
+		function handleKeyDown(event) {
+			if (event.key === 'Escape') {
+				onClose();
+			}
+		}
+
+		window.addEventListener('keydown', handleKeyDown);
+
+		return () => window.removeEventListener('keydown', handleKeyDown);
+	}, [course, onClose]);
+
 	if (!course) {
 		return null;
 	}
