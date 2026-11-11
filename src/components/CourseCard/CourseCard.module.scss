@@ -1,0 +1,73 @@
+.courseCard {
+	position: relative;
+	overflow: hidden;
+	display: grid;
+	height: 100%;
+	gap: 1.25rem;
+	padding: 1.75rem;
+	color: #f7f9ff;
+	cursor: pointer;
+}
+
+.courseCard::before {
+	position: absolute;
+	top: 1.25rem;
+	bottom: 1.25rem;
+	left: 0;
+	width: 0.25rem;
+	content: '';
+	background: #7d91ff;
+}
+
+.accent2::before {
+	background: #a88cff;
+}
+
+.accent3::before {
+	background: #65e1c3;
+}
+
+.accent4::before {
+	background: #7cc8ff;
+}
+
+.cardTitle {
+	margin: 0;
+	font-size: 1.5rem;
+	line-height: 1.2;
+}
+
+.courseDetails {
+	display: grid;
+	gap: 0.75rem;
+	margin: 0;
+}
+
+.courseDetail {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	font-size: 0.95rem;
+}
+
+.courseDetail dt {
+	color: #b9c5df;
+}
+
+.courseDetail dd {
+	margin: 0;
+	font-weight: 700;
+}
+
+.premiumLabel {
+	padding: 0;
+	margin: 0;
+	color: #caa6ff;
+	font-weight: 700;
+}
+
+@media (max-width: 36rem) {
+	.courseCard {
+		padding: 1.25rem;
+	}
+}

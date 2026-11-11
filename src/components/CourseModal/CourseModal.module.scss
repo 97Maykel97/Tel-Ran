@@ -1,0 +1,98 @@
+.overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 10;
+	display: grid;
+	place-items: center;
+	padding: 1.5rem;
+	background: rgb(1 7 20 / 72%);
+	backdrop-filter: blur(0.35rem);
+}
+
+.modal {
+	position: relative;
+	width: min(100%, 34rem);
+	display: grid;
+	gap: 1rem;
+	padding: 2.5rem;
+	color: #f7f9ff;
+	background: rgb(32 48 84 / 88%);
+	border: 1px solid rgb(206 223 255 / 55%);
+	border-radius: 1.25rem;
+	box-shadow: 0 1.5rem 5rem rgb(0 0 0 / 45%);
+	backdrop-filter: blur(1.5rem);
+}
+
+.modal h2 {
+	padding-right: 2rem;
+	margin: 0 0 0.5rem;
+	font-size: clamp(2rem, 7vw, 3rem);
+	line-height: 1;
+}
+
+.modal p {
+	margin: 0;
+	color: #d5def2;
+}
+
+.closeButton {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	display: grid;
+	place-items: center;
+	width: 2.5rem;
+	aspect-ratio: 1;
+	padding: 0;
+	color: #f7f9ff;
+	font-size: 2rem;
+	line-height: 1;
+	background: transparent;
+	border: 0;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.closeButton:hover {
+	background: rgb(255 255 255 / 12%);
+}
+
+.enrollButton {
+	padding: 0.9rem 1.25rem;
+	margin-top: 0.75rem;
+	color: #ffffff;
+	font: inherit;
+	font-weight: 800;
+	background: #7d5bf6;
+	border: 1px solid rgb(255 255 255 / 26%);
+	border-radius: 0.75rem;
+	box-shadow: 0 0.75rem 1.75rem rgb(125 91 246 / 35%);
+	cursor: pointer;
+	transition:
+		transform 160ms ease,
+		background-color 160ms ease;
+}
+
+.enrollButton:hover {
+	background: #2f2845;
+	transform: translateY(-0.125rem);
+}
+
+.modal .closedMessage {
+	padding: 0.875rem 1rem;
+	margin-top: 0.75rem;
+	color: #ffc0bd;
+	background: rgb(255 140 135 / 12%);
+	border: 1px solid rgb(255 140 135 / 35%);
+	border-radius: 0.75rem;
+}
+
+@media (max-width: 36rem) {
+	.overlay {
+		padding: 1rem;
+	}
+
+	.modal {
+		padding: 2rem 1.25rem 1.25rem;
+	}
+}
