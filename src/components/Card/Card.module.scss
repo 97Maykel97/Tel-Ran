@@ -1,0 +1,16 @@
+.card {
+	height: 100%;
+	overflow: hidden;
+	cursor: pointer;
+	background: #111f34;
+	border: 1px solid #293c59;
+	border-radius: 0.9rem;
+	box-shadow: 0 1.25rem 2.5rem rgb(0 0 0 / 18%);
+	transition: transform 180ms ease, border-color 180ms ease, background-color 180ms ease;
+}
+
+.card:hover {
+	background: #172943;
+	border-color: #49648b;
+	transform: translateY(-0.2rem);
+}

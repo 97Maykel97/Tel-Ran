@@ -1,0 +1,82 @@
+.bookCard {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	height: 100%;
+	min-height: 18rem;
+	padding: 2rem;
+	background: linear-gradient(135deg, rgb(255 255 255 / 3%), transparent 42%);
+}
+
+.bookCard::before {
+	position: absolute;
+	top: 0;
+	left: 2rem;
+	width: 3.25rem;
+	height: 0.25rem;
+	content: '';
+	background: #f5c96a;
+	border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.bookCard h3,
+.author,
+.copies,
+.classic { margin: 0; }
+
+.bookCard h3 {
+	max-width: 21rem;
+	min-height: 2.1em;
+	font-family: 'DM Sans', Arial, sans-serif;
+	font-size: clamp(1.55rem, 2vw, 2.15rem);
+	font-weight: 700;
+	letter-spacing: -0.055em;
+	line-height: 1.05;
+}
+
+.author {
+	min-height: 2.7em;
+	margin-top: 0.6rem;
+	color: #c6d1e2;
+	font-size: 0.98rem;
+	line-height: 1.35;
+}
+
+.meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem 0.7rem;
+	padding-top: 1.4rem;
+	margin-top: 1.5rem;
+	color: #aebbd0;
+	font-family: 'DM Mono', monospace;
+	font-size: 0.72rem;
+	line-height: 1.45;
+	border-top: 1px solid rgb(231 239 255 / 14%);
+	min-height: 3.7rem;
+}
+
+.meta span + span::before {
+	margin-right: 0.7rem;
+	content: '•';
+	color: #f5c96a;
+}
+
+.copies {
+	margin-top: 0.9rem;
+	min-height: 1.3rem;
+	color: #eef3fc;
+	font-size: 0.9rem;
+}
+
+.classic {
+	margin-top: 0.6rem;
+	min-height: 1.35rem;
+	color: #f5c96a;
+	font-family: 'Playfair Display', Georgia, serif;
+	font-size: 1rem;
+	font-style: italic;
+}
+
+.bookCard > :last-child { margin-top: auto; }

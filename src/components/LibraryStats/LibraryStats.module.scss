@@ -1,0 +1,27 @@
+.stats {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	max-width: 37rem;
+	overflow: hidden;
+	background: rgb(255 255 255 / 6%);
+	border: 1px solid rgb(231 239 255 / 14%);
+	border-radius: 1rem;
+}
+
+.statItem { display: flex; align-items: baseline; gap: 0.75rem; padding: 1.25rem 1.5rem; }
+.statItem + .statItem { border-left: 1px solid rgb(231 239 255 / 14%); }
+
+.statValue {
+	color: #f5c96a;
+	font-family: 'Playfair Display', Georgia, serif;
+	font-size: 2.7rem;
+	font-weight: 600;
+	line-height: 1;
+}
+
+.statLabel { color: #cbd5e5; font-size: 0.9rem; font-weight: 600; }
+
+@media (max-width: 30rem) {
+	.stats { grid-template-columns: 1fr; }
+	.statItem + .statItem { border-top: 1px solid rgb(231 239 255 / 14%); border-left: 0; }
+}

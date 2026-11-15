@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+:root {
+	font-family: 'DM Sans', Arial, sans-serif;
+	color: #f6f2ec;
+	background: #0b1625;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+}
+
+* { box-sizing: border-box; }
+
+body {
+	min-width: 20rem;
+	min-height: 100vh;
+	margin: 0;
+	background:
+		radial-gradient(circle at 72% 8%, rgb(71 89 139 / 35%), transparent 24rem),
+		radial-gradient(circle at 5% 48%, rgb(113 65 68 / 18%), transparent 25rem),
+		#0b1625;
+}

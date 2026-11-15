@@ -1,0 +1,19 @@
+.footer {
+	padding: 1.5rem 0 2.25rem;
+	border-top: 1px solid rgb(231 239 255 / 18%);
+}
+
+.footer > p { display: none; }
+
+.footerContent {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	color: #aebbd0;
+	font-family: 'DM Mono', monospace;
+	font-size: 0.75rem;
+}
+
+.footerContent p { margin: 0; }
+
+@media (max-width: 34rem) { .footerContent { flex-direction: column; } }

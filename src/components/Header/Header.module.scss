@@ -1,0 +1,57 @@
+
+
+
+
+
+
+
+
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1.5rem;
+	padding: 2.25rem 0 1.5rem;
+	border-bottom: 1px solid rgb(231 239 255 / 18%);
+}
+
+.brand { display: flex; align-items: center; gap: 0.85rem; }
+
+.brandMark {
+	display: grid;
+	width: 2.8rem;
+	aspect-ratio: 1;
+	place-items: center;
+	color: #0b1625;
+	font-family: 'DM Mono', monospace;
+	font-size: 0.85rem;
+	font-weight: 500;
+	letter-spacing: -0.08em;
+	background: #ec765d;
+	border-radius: 0.75rem 0.75rem 0.75rem 0.1rem;
+}
+
+.eyebrow, .lesson {
+	margin: 0;
+	color: #aebbd0;
+	font-family: 'DM Mono', monospace;
+	font-size: 0.72rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.brandName {
+	margin: 0.1rem 0 0;
+	font-size: clamp(1.5rem, 3vw, 2rem);
+	font-weight: 700;
+	letter-spacing: -0.06em;
+	line-height: 1;
+}
+
+.lesson { white-space: nowrap; }
+
+@media (max-width: 34rem) {
+	.header { padding-top: 1.5rem; }
+	.lesson { display: none; }
+}
