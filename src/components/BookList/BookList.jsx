@@ -6,24 +6,23 @@ function BookList({ books, genre, id }) {
 		? books.filter(book => book.genre === genre)
 		: books;
 
-	if (filteredBooks.length === 0) {
-		return (
-			<p className={styles.emptyMessage}>
-				{genre
-					? 'В выбранной категории книги отсутствуют.'
-					: 'В библиотеке пока нет книг.'}
-			</p>
-		);
-	}
-
 	return (
 		<section className={styles.section} id={id}>
 			{genre && <h2 className={styles.sectionTitle}>{genre}</h2>}
-			<div className={styles.booksGrid}>
-				{filteredBooks.map(book => (
-					<BookCard key={book.id} book={book} />
-				))}
-			</div>
+
+			{filteredBooks.length === 0 ? (
+				<p className={styles.emptyMessage}>
+					{genre
+						? 'В выбранной категории книги отсутствуют.'
+						: 'В библиотеке пока нет книг.'}
+				</p>
+			) : (
+				<div className={styles.booksGrid}>
+					{filteredBooks.map(book => (
+						<BookCard key={book.id} book={book} />
+					))}
+				</div>
+			)}
 		</section>
 	);
 }

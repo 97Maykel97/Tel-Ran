@@ -13,7 +13,7 @@ function BookCard({ book }) {
 					<span>{book.year}</span>
 					<span>{book.genre}</span>
 				</div>
-				<p className={styles.copies}>Copies: {book.copies}</p>
+				<p className={styles.copies}>Экземпляры: {book.copies}</p>
 
 				{book.year < 2000 && (
 					<p className={styles.classic}>Классическое издание</p>
